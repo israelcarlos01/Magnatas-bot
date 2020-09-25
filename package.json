@@ -1,0 +1,27 @@
+{
+  "name": "magnatas-bot",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/israelcarlos01/Magnatas-bot.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/israelcarlos01/Magnatas-bot/issues"
+  },
+  "homepage": "https://github.com/israelcarlos01/Magnatas-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "eslint": "^7.9.0",
+    "esm": "^3.2.25",
+    "nodemon": "^2.0.4"
+  }
+}
