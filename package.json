@@ -19,9 +19,11 @@
   },
   "homepage": "https://github.com/israelcarlos01/Magnatas-bot#readme",
   "dependencies": {
+    "@discordjs/opus": "^0.3.2",
     "discord.js": "^12.3.1",
     "eslint": "^7.9.0",
     "esm": "^3.2.25",
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "ytdl-core": "^3.3.0"
   }
 }
