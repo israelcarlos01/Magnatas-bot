@@ -1,6 +1,6 @@
 // require the discord.js module
 const Discord = require("discord.js");
-const { token, prefix, link } = require("./config.json");
+const { token, prefix } = require("./config.json");
 const ytdl = require("ytdl-core");
 
 // create a new Discord client
@@ -19,7 +19,11 @@ client.on("guildMemberAdd", (member) => {
 
 // Bot de música
 client.on("message", async (message) => {
-  if (message.content === "!play") {
+  const musica = message.content;
+  const desestruct = musica.split(" ");
+  const link = desestruct[1];
+
+  if (message.content === `!play ${link}`) {
     // Variável que contém o canal de voz que o usuário está atualmente
     const voiceChannel = message.member.voice.channel;
 
@@ -29,7 +33,7 @@ client.on("message", async (message) => {
 
     const connection = await voiceChannel.join();
     const watcher = connection.play(
-      ytdl("https://www.youtube.com/watch?v=tNcMrdAeJeU&ab_channel=LilWhind", {
+      ytdl(link, {
         filter: "audioonly",
         quality: "highest",
       })
