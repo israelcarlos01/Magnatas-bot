@@ -56,9 +56,18 @@ client.on("message", async (message) => {
     } else if (message.content === "!brbr") {
       const connection = await message.member.voice.channel.join();
       connection.play("audio/brbr.mp3");
+    } else if (message.content === "!aidento") {
+      const connection = await message.member.voice.channel.join();
+      connection.play("audio/aidento.mp3");
+    } else if (message.content === "!mod") {
+      const connection = await message.member.voice.channel.join();
+      connection.play("audio/mod.mp3");
+    } else if (message.content === "!taz") {
+      const connection = await message.member.voice.channel.join();
+      connection.play("audio/tazmania.mp3");
     }
   } else {
-    message.reply("You need to join a voice channel first!");
+    message.reply("Você precisa entrar em um chat de voz primeiro nerdola!");
   }
 });
 
